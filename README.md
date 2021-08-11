@@ -4,7 +4,7 @@ A userscript to fix the follow bugs in Notion
 
 # Installation
 
-[Greasy Frok](https://greasyfork.org/en/scripts/)
+[Greasy Frok](https://greasyfork.org/en/scripts/430626-notion-fix)
 
 # Fixed bugs
 
