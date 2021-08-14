@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion Fix
 // @namespace    https://github.com/alanleungcn/notion-fix
-// @version      1.0
+// @version      1.1
 // @author       Alan Leung
 // @description  Fix bugs in Notion
 // @match        https://www.notion.so/*
