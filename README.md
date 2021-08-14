@@ -1,6 +1,6 @@
 # Notion Fix
 
-A userscript to fix the follow bugs in Notion
+A userscript to fix the following bugs in Notion
 
 # Installation
 
@@ -8,9 +8,9 @@ A userscript to fix the follow bugs in Notion
 
 # Fixed bugs
 
-- Timeline view table bottom divider position
+- ~~Timeline view table bottom divider position~~ (Fixed in 2.11.23.9.2.0)
 - Scrollbar stuck to rightmost when switching from timeline view
 
 # Notion version
 
-2.11.23.9.0.39
+created in 2.11.23.9.0.39

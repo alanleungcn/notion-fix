@@ -35,9 +35,9 @@
 		applyFix();
 	});
 
-	function fixTimelineDividerPosition() {
-		document.querySelector('.pseudoSelection').style.position = '';
-	}
+	// function fixTimelineDividerPosition() {
+	// 	document.querySelector('.pseudoSelection').style.position = '';
+	// }
 
 	function fixScrollbarPosition() {
 		document.querySelector(
@@ -56,9 +56,9 @@
 	function applyFix() {
 		requestAnimationFrame(() => {
 			queryView();
-			if (curView === 'timeline') {
-				fixTimelineDividerPosition();
-			}
+			// if (curView === 'timeline') {
+			// 	fixTimelineDividerPosition();
+			// }
 			if (curView !== preView && preView === 'timeline') {
 				fixScrollbarPosition();
 			}
