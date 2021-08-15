@@ -4,12 +4,13 @@ A userscript to fix the following bugs in Notion
 
 # Installation
 
-[Greasy Frok](https://greasyfork.org/en/scripts/430626-notion-fix)
+[Greasy Fork](https://greasyfork.org/en/scripts/430626-notion-fix)
 
 # Fixed bugs
 
 - ~~Timeline view table bottom divider position~~ (Fixed in 2.11.23.9.2.0)
 - Scrollbar stuck to rightmost when switching from timeline view
+- Firefox scrollbar looks unappealing
 
 # Notion version
 
