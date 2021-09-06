@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion Fix
 // @namespace    https://github.com/alanleungcn/notion-fix
-// @version      1.2
+// @version      1.3
 // @author       Alan Leung
 // @description  Fix bugs in Notion
 // @match        https://www.notion.so/*
@@ -28,6 +28,7 @@
 		if (curView) {
 			clearInterval(init);
 			applyFix();
+			fixFirefoxScrollbarWidth();
 		}
 	}, checkInterval);
 
@@ -46,10 +47,9 @@
 	}
 
 	function fixFirefoxScrollbarWidth() {
-		const scroller = document.querySelectorAll('.notion-scroller');
-		scroller.forEach((e) => {
-			e.style.scrollbarWidth = 'thin';
-		});
+		const style = document.createElement('style');
+		style.textContent = `.notion-scroller { scrollbar-width: thin }`;
+		document.head.append(style);
 	}
 
 	function queryView() {
@@ -69,7 +69,6 @@
 			if (curView !== preView && preView === 'timeline') {
 				fixScrollbarPosition();
 			}
-			fixFirefoxScrollbarWidth();
 			preView = curView;
 		});
 	}
